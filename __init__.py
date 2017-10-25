@@ -13,10 +13,10 @@ app = Flask(__name__)
 def conference():
     response = VoiceResponse()
     dial = Dial()
-    dial.conference('Room 1234')
+    dial.conference('moderated-conference-room', start_conference_on_enter=False)
     response.append(dial)
 
-    return str(response)
+    print(response)
 
 
 if __name__ == "__main__":
