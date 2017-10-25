@@ -16,7 +16,7 @@ def conference():
     dial.conference('moderated-conference-room', start_conference_on_enter=False)
     response.append(dial)
 
-    print(response)
+    return str(response)
 
 
 if __name__ == "__main__":
