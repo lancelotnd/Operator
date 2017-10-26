@@ -7,7 +7,7 @@ app = Flask(__name__)
 def assignment_callback():
     """For now, we will respond to assignment callbacks with empty 200 response"""
     resp = Response({}, status = 200, mimetype = 'application/json')
-    return resp
+    return str(resp)
 
 if __name__ == "__main__":
     app.run()
